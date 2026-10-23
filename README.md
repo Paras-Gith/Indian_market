@@ -94,9 +94,6 @@ Features: the last three daily returns, the distance of price from its 50-day an
 ## Chart guide
 
 Each entry says what the chart shows, what to look for, and how it helps the analysis.
-![image alt](https://github.com/Paras-Gith/Indian_market/blob/fe445816c781e6763d78604659988bd80b992c66/close_price.png)
-
-![image alt](https://github.com/Paras-Gith/Indian_market/blob/fe445816c781e6763d78604659988bd80b992c66/heatmap.png)
 
 ### Week 1: `week1_cleaning_eda.ipynb`
 
@@ -105,12 +102,14 @@ Each entry says what the chart shows, what to look for, and how it helps the ana
 - *Look for:* thin bright lines only in `Volume`, which are the 28 recoded zero-volume days. Every other column is solid.
 - *Helps:* proves where the data gaps are, and that the cleaning touched only the unreliable field.
 
-  
+![image alt](https://github.com/Paras-Gith/Indian_market/blob/fe445816c781e6763d78604659988bd80b992c66/heatmap.png)  
 
 **2. Closing price trend**
 - *Shows:* the NIFTY 50 close from 2016 to 2026.
 - *Look for:* the steady climb to 2019, the sharp drop in March 2020 (low of 7,610), the strong recovery, and the dip in 2026.
 - *Helps:* gives the overall picture and the one event that shaped the decade, before any detailed analysis.
+
+![image alt](https://github.com/Paras-Gith/Indian_market/blob/fe445816c781e6763d78604659988bd80b992c66/close_price.png)
 
 **3. Correlation heatmap**
 - *Shows:* how strongly each pair of numeric columns moves together (1 means identical, 0 means unrelated).
