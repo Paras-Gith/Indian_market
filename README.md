@@ -94,6 +94,9 @@ Features: the last three daily returns, the distance of price from its 50-day an
 ## Chart guide
 
 Each entry says what the chart shows, what to look for, and how it helps the analysis.
+![image alt](https://github.com/Paras-Gith/Indian_market/blob/fe445816c781e6763d78604659988bd80b992c66/close_price.png)
+
+![image alt](https://github.com/Paras-Gith/Indian_market/blob/fe445816c781e6763d78604659988bd80b992c66/heatmap.png)
 
 ### Week 1: `week1_cleaning_eda.ipynb`
 
@@ -136,10 +139,15 @@ Each entry says what the chart shows, what to look for, and how it helps the ana
 - *Look for:* ten of eleven periods positive, and 2020 still up 14.8%. The first and last bars (2016 and 2026) are part-years.
 - *Helps:* gives a year-by-year view, and shows why one annual number can hide a turbulent year.
 
+![image alt](https://github.com/Paras-Gith/Indian_market/blob/fe445816c781e6763d78604659988bd80b992c66/annual_returns.png)
+  
+
 **4. Drawdown chart**
 - *Shows:* how far the index sat below its previous high at every point in time.
 - *Look for:* the deepest point of -38.44% on 23 March 2020, recovered by 9 November 2020 (about 7.5 months), and a smaller 2026 decline of up to -15.2%.
 - *Helps:* measures the real cost of holding through bad periods, and shows that declines of 10% to 17% are routine.
+
+![image alt](https://github.com/Paras-Gith/Indian_market/blob/fe445816c781e6763d78604659988bd80b992c66/drawdown.png)
 
 **5. Monthly returns heatmap**
 - *Shows:* the sum of daily returns for each month of each year (green gains, red losses).
@@ -168,6 +176,8 @@ Each entry says what the chart shows, what to look for, and how it helps the ana
 - *Look for:* boxes that look almost identical, plus one empty "Saturday" box (a single special Budget session on 1 February 2025).
 - *Helps:* visualises hypothesis 3. The similarity matches the finding that there is no reliable weekday effect.
 
+![image alt](https://github.com/Paras-Gith/Indian_market/blob/fe445816c781e6763d78604659988bd80b992c66/box.png)
+
 **4. Volume vs absolute return scatter**
 - *Shows:* one dot per day, with trading volume on one axis and the size of that day's price move on the other.
 - *Look for:* a loose upward drift, with the largest moves mostly on higher-volume days.
@@ -180,10 +190,14 @@ Each entry says what the chart shows, what to look for, and how it helps the ana
 - *Look for:* the second column holding almost everything (226 and 221), meaning the model predicts "Up" on 447 of 457 days.
 - *Helps:* reveals that the 49.2% accuracy comes from defaulting to one class, not from real skill, which accuracy alone would hide.
 
+![image alt](https://github.com/Paras-Gith/Indian_market/blob/fe445816c781e6763d78604659988bd80b992c66/confusion.png)
+
 **2. ROC curve (logistic regression)**
 - *Shows:* how well the model's probabilities separate Up days from Down days. The dashed diagonal is random guessing, and a good model bends toward the top-left.
 - *Look for:* a curve hugging the diagonal, with an AUC of about 0.49 (chance is 0.50).
 - *Helps:* confirms the model has no ranking ability, independent of any chosen threshold.
+
+![image alt](https://github.com/Paras-Gith/Indian_market/blob/fe445816c781e6763d78604659988bd80b992c66/curve.png)
 
 **3. Model comparison bar chart**
 - *Shows:* the test accuracy of the logistic regression and the decision tree.
